@@ -6,7 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+//Commented out the default auth routes for the API to work
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
